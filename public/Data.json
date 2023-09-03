@@ -1,0 +1,101 @@
+[
+    {
+      "_id": 1,
+      "imgSrc": "https://i.ibb.co/kXYYD5d/spa-salon-with-beach-view.jpg",
+      "desTitle": "Great Barrier Beef",
+      "location": "Australia",
+      "grade": "CULTRUL RELAX",
+      "fees": 700,
+      "description": "One of the most remarkable Australian natural gifts is the Great Barrier Reef. The hallmark of this place is lavish beauty. It is always interesting to be in this place."
+    },
+    {
+      "_id": 2,
+      "imgSrc": "https://i.ibb.co/wg7thP8/modern-studio-apartment-design-with-bedroom-living-space.jpg",
+      "desTitle": "Santorini Sunset",
+      "location": "Greece",
+      "grade": "ROMANTIC GETAWAY",
+      "fees": 1200,
+      "description": "Experience breathtaking sunsets in Santorini, Greece. This romantic getaway offers stunning views, charming villages, and exquisite cuisine."
+    },
+    {
+      "_id": 3,
+      "imgSrc": "https://i.ibb.co/qBZ6h1n/hammocks-with-palm-trees.jpg",
+      "desTitle": "Machu Picchu Expedition",
+      "location": "Peru",
+      "grade": "ADVENTURE",
+      "fees": 1500,
+      "description": "Embark on an adventurous journey to Machu Picchu, Peru. Explore ancient ruins, hike through scenic trails, and immerse yourself in rich history."
+    },
+    {
+      "_id": 4,
+      "imgSrc": "https://i.ibb.co/zbhLPkd/luxury-bedroom-suite-resort-high-rise-hotel-with-working-table.jpg",
+      "desTitle": "Parisian Delights",
+      "location": "France",
+      "grade": "CULTURAL",
+      "fees": 900,
+      "description": "Indulge in the cultural delights of Paris, France. Visit iconic landmarks, discover world-renowned art, and savor exquisite French cuisine."
+    },
+    {
+      "_id": 5,
+      "imgSrc": "https://i.ibb.co/F4V1Yqf/light-garden-luxury-pool-nature.jpg",
+      "desTitle": "Serene Maldives",
+      "location": "Maldives",
+      "grade": "BEACH ESCAPE",
+      "fees": 2000,
+      "description": "Escape to the serene beaches of the Maldives. Experience luxury resorts, crystal-clear waters, and a tranquil atmosphere."
+    },
+    {
+      "_id": 6,
+      "imgSrc": "https://i.ibb.co/qBZ6h1n/hammocks-with-palm-trees.jpg",
+      "desTitle": "New York City Adventure",
+      "location": "United States",
+      "grade": "CITY EXPLORATION",
+      "fees": 800,
+      "description": "Embark on an adventure in the bustling city of New York. Explore iconic landmarks, immerse yourself in diverse cultures, and indulge in world-class entertainment."
+    },
+    {
+      "_id": 7,
+      "imgSrc": "https://i.ibb.co/F4V1Yqf/light-garden-luxury-pool-nature.jpg",
+      "desTitle": "Exotic Bali",
+      "location": "Indonesia",
+      "grade": "NATURE RETREAT",
+      "fees": 1100,
+      "description": "Discover the exotic beauty of Bali, Indonesia. Immerse yourself in lush landscapes, visit ancient temples, and rejuvenate your senses."
+    },
+    {
+      "_id": 8,
+      "imgSrc": "https://i.ibb.co/qBZ6h1n/hammocks-with-palm-trees.jpg",
+      "desTitle": "Cultural Heritage of Rome",
+      "location": "Italy",
+      "grade": "HISTORICAL",
+      "fees": 950,
+      "description": "Explore the cultural heritage of Rome, Italy. Visit ancient ruins, marvel at magnificent architecture, and indulge in authentic Italian cuisine."
+    },
+    {
+      "_id": 9,
+      "imgSrc": "https://i.ibb.co/wg7thP8/modern-studio-apartment-design-with-bedroom-living-space.jpg",
+      "desTitle": "Tokyo City Lights",
+      "location": "Japan",
+      "grade": "URBAN ADVENTURE",
+      "fees": 1300,
+      "description": "Experience the vibrant city lights of Tokyo, Japan. Discover modern technology, traditional temples, and mouthwatering street food."
+    },
+    {
+      "_id": 10,
+      "imgSrc": "https://i.ibb.co/kXYYD5d/spa-salon-with-beach-view.jpg",
+      "desTitle": "Enchanting Prague",
+      "location": "Czech Republic",
+      "grade": "FAIRYTALE",
+      "fees": 850,
+      "description": "Step into the enchanting world of Prague, Czech Republic. Wander through charming cobblestone streets, explore medieval castles, and indulge in delicious Czech cuisine."
+    },
+    {
+      "_id": 11,
+      "imgSrc": "https://i.ibb.co/F4V1Yqf/light-garden-luxury-pool-nature.jpg",
+      "desTitle": "Serengeti Safari",
+      "location": "Tanzania",
+      "grade": "WILDLIFE",
+      "fees": 1800,
+      "description": "Embark on a thrilling safari adventure in the Serengeti, Tanzania. Witness the majestic wildlife, experience breathtaking landscapes, and immerse yourself in African culture."
+    }
+]
