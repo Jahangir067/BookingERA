@@ -8,7 +8,9 @@ import 'aos/dist/aos.css';
 
 const Main = () => {
 
-    const [data, setData] = useState();
+    const [data, setData] = useState([]);
+
+    const displayData = data.slice(0, 6);
 
     useEffect(() => {
         fetch('Data.json')
@@ -28,7 +30,7 @@ const Main = () => {
 
             <div className="secContent grid">
                 {
-                    data && data.map(singleData =>
+                    displayData && displayData.map(singleData =>
                         <div className="singleDestination" key={singleData._id} data-aos='fade-up'>
                             <div className="imageDiv">
                                 <img src={singleData.imgSrc} alt={singleData.desTitle} />
@@ -50,7 +52,7 @@ const Main = () => {
                                 <div className="desc">
                                     <p>{singleData.description}</p>
                                 </div>
-                                <button className='btn flex'>Details<BsClipboardCheck className='icon' /></button>
+                                <button className='allBtn flex'>Details <BsClipboardCheck className='icon' /></button>
                             </div>
                         </div>
                     )

@@ -238,47 +238,55 @@
 
 @media screen and (min-width: 870px) {
     .footer{
+        padding: 5rem 0;
         .secContent{
-            .contactDiv{
-               flex-direction: column;
-               justify-content: space-between;
-
-               .inputDiv{
-                width: max-content;
+            .footerCard{
                 flex-direction: row;
-                justify-content: flex-start;
 
-                input{
-                    width: 68%;
+                .footerLinks{
+                    grid-template-columns: repeat(3, 1fr);
+                    padding-bottom: 1rem;
                 }
-                .btn{
-                    width: max-content;
-                }
-               }
             }
-        }
     }
+}
 }
 
 @media screen and (min-width: 1240px) {
     .footer{
         .secContent{
-            .contactDiv{
-               flex-direction: column;
-               justify-content: space-between;
+            .footerCard{
+                padding: 3rem 1rem;
 
-               .inputDiv{
-                width: max-content;
-                flex-direction: row;
-                justify-content: flex-start;
+                .footerIntro{
+                    .footerParagraph{
+                        font-size: 15px;
+                        color: var(--textColor);
+                    }
 
-                input{
-                    width: 68%;
+                    .footerSocial{
+                        column-gap: .5rem;
+
+                        .icon{
+                            color: var(--textColor);
+                            font-size: 25px;
+
+                            &:hover{
+                                color: var(--PrimaryColor);
+                            }
+                        }
+                    }
                 }
-                .btn{
-                    width: max-content;
+
+                .footerLinks{
+                    .linkGroup{
+                        .footerList{
+                            font-size: 16px;
+                            padding: 5px 0;
+                        }
+                    }
                 }
-               }
+
             }
         }
     }

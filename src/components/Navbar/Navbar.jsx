@@ -20,7 +20,7 @@ const Navbar = () => {
           <header className="header flex">
 
             <div className="logoDiv">
-                <a href="#" className='logo flex'>
+                <a href="#" className='logo flex text-decoration-none'>
                     <h1><MdTravelExplore className='icon'></MdTravelExplore>  TravelERA</h1>
                 </a>
             </div>
@@ -29,27 +29,27 @@ const Navbar = () => {
               <ul className="navLists flex">
 
                 <li className="navItem">
-                    <a href="#" className="navLink">Home</a>
+                    <a href="#" className="navLink text-decoration-none">Home</a>
                 </li>
 
                 <li className="navItem">
-                    <a href="#" className="navLink">Shop</a>
+                    <a href="#" className="navLink text-decoration-none">Shop</a>
                 </li>
 
                 <li className="navItem">
-                    <a href="#" className="navLink">Packages</a>
+                    <a href="#" className="navLink text-decoration-none">Packages</a>
                 </li>
                 
                 <li className="navItem">
-                    <a href="#" className="navLink">About</a>
+                    <a href="#" className="navLink text-decoration-none">About</a>
                 </li>
 
                 <li className="navItem">
-                    <a href="#" className="navLink">Contact</a>
+                    <a href="#" className="navLink text-decoration-none">Contact</a>
                 </li>
 
-                <button className='btn'>
-                    <a href="#">Book Now</a>
+                <button className='allBtn'>
+                    <a href="#" className='text-decoration-none'>Book Now</a>
                 </button>
 
               </ul>

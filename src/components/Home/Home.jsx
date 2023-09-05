@@ -10,8 +10,8 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 const Home = () => {
 
-    useEffect( () => {
-        Aos.init({duration: 2000})
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
     }, [])
 
     return (

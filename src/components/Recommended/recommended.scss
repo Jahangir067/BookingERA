@@ -1,0 +1,205 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+    --cardHover: rgb(255, 255, 255);
+}
+
+.cardDestination {
+    height: 340px;
+    width: 100%;
+    display: grid;
+    row-gap: 10px;
+    // padding: 1rem;
+    border-radius: 10px;
+    align-items: center;
+    background: var(--cardBG);
+    box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+    overflow: hidden;
+
+    &:hover {
+        background: var(--cardHover);
+        box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+        transition: .3s ease;
+    }
+
+    .cardImg {
+        height: 80px;
+        width: 100%;
+        overflow: hidden;
+
+        img {
+            height: 80px;
+            width: 100%;
+            object-fit: cover;
+            transition: 2s ease;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .cardDetails {
+        padding: 1rem;
+
+        .cardTitle {
+            color: var(--blackColor);
+            font-size: 1.25rem;
+        }
+
+        .cardContent {
+            gap: .5rem;
+
+            .icon {
+                color: var(--textColor);
+                font-size: 18px;
+            }
+
+            .cardName {
+                color: var(--textColor);
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+
+        .cardfee {
+            width: 100%;
+            justify-content: space-between;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-top: 1.5px solid var(--greyText);
+            border-bottom: 1.5px solid var(--greyText);
+
+
+            .cardPrice {
+                font-size: 2rem;
+                color: var(--blackColor);
+            }
+        }
+
+
+
+        .allBtn {
+            margin-top: 1rem;
+            color: var(--whiteColor);
+            font-weight: 600;
+            justify-content: space-between;
+            gap: .5rem;
+
+
+            .icon {
+                align-self: center;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+.bgColor {
+    background: var(--whiteColor);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    .recHeaderColor{
+        background: var(--gradientColor);
+        text-align: center;
+        color: var(--whiteColorDeam);
+        padding: 2px;
+
+        h3{
+            font-size: 22px;
+            margin-top: 2px;
+        }
+
+        p{
+            font-size: 12px;
+        }
+
+    }
+
+    .recMainGap{
+        padding: 7px 8px;
+    }
+
+    .recMain {
+        display: flex;
+        align-items: center;
+        background: var(--whiteColorDeam);
+        cursor: pointer;
+
+        &:hover{
+            background: var(--cardBG);
+        }
+
+        .recImage {
+            height: 72px;
+            width: 72px;
+            transition: .5s;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        
+
+        .recHeader {
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: var(--textColor);
+            padding: 10px;
+        }
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 870px) {
+    .cardDestination {
+        height: 100%;
+        width: 370px;
+
+    }
+}
+
+@media screen and (min-width: 1240px) {
+
+    .cardDestination {
+        height: 100%;
+        width: 330px;
+
+        .cardImg {
+            height: 180px;
+            width: 100%;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: 2s ease;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+    }
+}
