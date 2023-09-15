@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
-import './main.scss';
+import './FeaturedCard.scss'
 import { GrLocation } from 'react-icons/gr';
 import { BsClipboardCheck } from 'react-icons/bs';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-const Main = () => {
+const FeaturedCard = () => {
 
     const [data, setData] = useState([]);
 
@@ -62,4 +62,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default FeaturedCard;

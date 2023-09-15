@@ -1,8 +1,8 @@
 import './App.css'
 import About from './components/About/About'
 import Footer from './components/Footer/Footer'
-import Home from './components/Home/Home'
-import Main from './components/Main/Main'
+import Header from './components/Header/Header'
+import FeaturedCard from './components/FeaturedCard/FeaturedCard'
 import Navbar from './components/Navbar/Navbar'
 import Popular from './components/Popular/Popular'
 import Recommended from './components/Recommended/Recommended'
@@ -12,11 +12,11 @@ function App() {
   return (
     <>
     <Navbar></Navbar>
-    <Home></Home>
+    <Header></Header>
     <About></About>
     <Recommended></Recommended>
     <Popular></Popular>
-    <Main></Main>
+    <FeaturedCard></FeaturedCard>
     <Video></Video>
     <Footer></Footer>
     </>

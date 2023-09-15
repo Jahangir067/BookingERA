@@ -1,4 +1,4 @@
-import './home.scss';
+import './Header.scss';
 import { GrLocation } from 'react-icons/gr';
 import { HiFilter } from 'react-icons/hi';
 import { FiFacebook, FiInstagram, FiList } from 'react-icons/fi';
@@ -7,8 +7,22 @@ import { TbApps } from 'react-icons/tb';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
-const Home = () => {
+import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+const Header = () => {
+    const [price, setPrice] = useState(5000);
+    const [destination, setDestination] = useState('')
+    const navigate = useNavigate()
+
+    // const handlePriceChange = (event) => {
+    //     const newPrice = event.target.value;
+    //     setPrice(newPrice);
+    // };
+
+    const handleSearch = () => {
+            navigate('/hotels', {state: {destination, price}});
+        
+    }
 
     useEffect(() => {
         Aos.init({ duration: 2000 })
@@ -34,7 +48,7 @@ const Home = () => {
                     <div className="destinationInput">
                         <label htmlFor="city">Search Your Destination</label>
                         <div className="input flex">
-                            <input type="text" placeholder='Enter Name Here...' />
+                            <input onChange={e=> setDestination(e.target.value)} type="text" placeholder='Enter Name Here...' required />
                             <GrLocation className='icon'></GrLocation>
                         </div>
                     </div>
@@ -43,22 +57,33 @@ const Home = () => {
                         <label htmlFor="date">Select Your Date: </label>
                         <div className="input flex">
                             <input type="date" />
+                            <input type="date" className='ms-4'/>
                         </div>
                     </div>
 
                     <div className="priceInput">
                         <div className="label_total flex">
                             <label htmlFor="price">Max Price: </label>
-                            <h3 className="total">$5000</h3>
+                            <h3 className="total">${price}</h3>
                         </div>
                         <div className="input flex">
-                            <input type="range" max='5000' min='1000' />
+                            <input
+                                type="range"
+                                id="priceRange"
+                                max={1000}
+                                min={50}
+                                step={50}
+                                value={price}
+                                onChange={e=> setPrice(e.target.value)}
+                                required
+                            />
+                           
                         </div>
                     </div>
 
-                    <div className="searchOptions flex">
+                    <div onClick={handleSearch} className="searchOptions flex">
                         <HiFilter className='icon'></HiFilter>
-                        <span>More Filter</span>
+                        <span>Search</span>
                     </div>
 
                 </div>
@@ -81,4 +106,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Header;

@@ -3,6 +3,7 @@ import './navbar.scss';
 import { MdTravelExplore } from 'react-icons/md';
 import { AiFillCloseCircle, AiOutlineMenu } from 'react-icons/ai';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -29,11 +30,11 @@ const Navbar = () => {
               <ul className="navLists flex">
 
                 <li className="navItem">
-                    <a href="#" className="navLink text-decoration-none">Home</a>
+                    <Link to='/' href="#" className="navLink text-decoration-none">Home</Link>
                 </li>
 
                 <li className="navItem">
-                    <a href="#" className="navLink text-decoration-none">Shop</a>
+                    <Link to='/guide' href="#" className="navLink text-decoration-none">Travel Guide</Link>
                 </li>
 
                 <li className="navItem">
