@@ -120,6 +120,23 @@
 
 }
 
+.filterButton {
+    padding: .6rem 1.5rem;
+    background: var(--gradientColor);
+    border-radius: 0.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+
+}
+
+.filterButton:hover{
+    background: var(--SecondaryColor);
+    color: black;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 540px) {
     .searchItem{

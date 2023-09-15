@@ -14,10 +14,6 @@ const Header = () => {
     const [destination, setDestination] = useState('')
     const navigate = useNavigate()
 
-    // const handlePriceChange = (event) => {
-    //     const newPrice = event.target.value;
-    //     setPrice(newPrice);
-    // };
 
     const handleSearch = () => {
             navigate('/hotels', {state: {destination, price}});
