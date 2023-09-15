@@ -1,0 +1,165 @@
+.hotelContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 130px;
+}
+
+.hotelWrapper{
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    top: 120px;
+}
+
+.bookNow{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    border: none;
+    padding: 8px 20px;
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hotelAddres{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hotelDistance{
+    color: #0071c2;
+    font-weight: 500;
+
+}
+
+.hotelPriceHighLight{
+    color: #008009;
+    font-weight: 500;
+}
+
+.hotelImages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hotelImgWrapper{
+  width: 33%;
+
+}
+
+.hotelImg{
+  width: 100%;
+  object-fit: cover;
+}
+
+.hotelDetails{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.hotelDetailTexts{
+    flex: 3;
+}
+
+.hotelDetailPrice{
+    flex: 1;
+    background-color: #ebf3ff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bookBtn{
+    border: none;
+    padding: 8px 20px;
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+/* Slider Related Classess */
+
+.slider{
+  position: sticky;
+  top: 120px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.426);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+
+.sliderWrapper{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.sliderImg{
+    width: 70%;
+    height: 80vh;
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.arrow{
+    margin: 10px;
+    font-size: 30px;
+    color: lightgray;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 540px) {
+    .hotelContainer{
+        display: block;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .bookNow{
+        display: none;
+    }
+    .hotelImages{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hotelImgWrapper{
+        width: 100%;
+    }
+    .hotelDetails{
+        display: flex;
+        flex-direction: column;
+    }
+    .sliderImg{
+        width: 90%;
+        height: 50%;
+    }
+}

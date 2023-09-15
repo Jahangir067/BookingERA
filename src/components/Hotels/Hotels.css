@@ -80,8 +80,7 @@
 .listResult {
     flex: 3;
     margin-top: 120px;
-    position: relative;
-    z-index: -10;
+    position: sticky;
 }
 
 .filterBtn {

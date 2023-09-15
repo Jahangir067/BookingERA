@@ -13,7 +13,7 @@ const FeaturedCard = () => {
     const displayData = data.slice(0, 6);
 
     useEffect(() => {
-        fetch('Data.json')
+        fetch('http://localhost:5000/hotels')
             .then(res => res.json())
             .then(data => setData(data))
     }, []);

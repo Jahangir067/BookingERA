@@ -5,6 +5,7 @@ import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home";
 import TravelGuide from '../Pages/TravelGuide/TravelGuide'
 import Hotels from "../components/Hotels/Hotels";
+import HotelDetails from "../components/HotelDetails/HotelDetails";
 
  export const router = createBrowserRouter([
     {
@@ -22,6 +23,11 @@ import Hotels from "../components/Hotels/Hotels";
         {
           path: '/hotels',
           element: <Hotels></Hotels>
+        },
+        {
+          path: '/hotelDetails/:id',
+          element: <HotelDetails></HotelDetails>,
+          loader: ({params}) => `${params.id}`
         }
       ]
     },

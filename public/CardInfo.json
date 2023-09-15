@@ -1,0 +1,121 @@
+[
+    {
+        "img": "https://i.ibb.co/kXYYD5d/spa-salon-with-beach-view.jpg",
+        "cardTitle": "Tower Street Apartments",
+        "cardDistance": "500m from center",
+        "cardService": "Free airport taxi",
+        "cardSubTitle": "Studio Apartment with Air conditioning",
+        "cardDesc": "Entire Studio • 1 bathroom • 31m² 1 full bed",
+        "cardCancel": "Free cancellation",
+        "cancelSub": "You can cancel later, so lock in this great price today!",
+        "review": "Excellent",
+        "rating": "4.5",
+        "cardPrice": "123",
+        "tax": "Include taxes and fees"
+      },
+    
+    {
+        "img": "https://i.ibb.co/DYV9KYX/destination-1.jpg",
+        "cardTitle": "Beachfront Villa",
+        "cardDistance": "1km from center",
+        "cardService": "Private beach access",
+        "cardSubTitle": "Luxury Villa with Ocean View",
+        "cardDesc": "Entire Villa • 3 bathrooms • 200m² 3 bedrooms",
+        "cardCancel": "Free cancellation",
+        "cancelSub": "Flexible cancellation policy for your peace of mind!",
+        "review": "Superb",
+        "rating": "4.8",
+        "cardPrice": "450",
+        "tax": "Include taxes and fees"
+      },
+    
+    {
+        "img": "https://i.ibb.co/wg7thP8/modern-studio-apartment-design-with-bedroom-living-space.jpg",
+        "cardTitle": "Mountain Cabin Retreat",
+        "cardDistance": "10km from center",
+        "cardService": "Hiking trails nearby",
+        "cardSubTitle": "Cozy Cabin in the Woods",
+        "cardDesc": "Entire Cabin • 2 bathrooms • 80m² 2 bedrooms",
+        "cardCancel": "Free cancellation",
+        "cancelSub": "Cancel up to 7 days before your stay for a full refund.",
+        "review": "Good",
+        "rating": "4.0",
+        "cardPrice": "80",
+        "tax": "Include taxes and fees"
+      },
+    
+    {
+        "img": "https://i.ibb.co/qBZ6h1n/hammocks-with-palm-trees.jpg",
+        "cardTitle": "Oceanview Resort",
+        "cardDistance": "1km from center",
+        "cardService": "Free breakfast",
+        "cardSubTitle": "Deluxe Room with Sea View",
+        "cardDesc": "1 Bedroom • 1 bathroom • 40m² • Sea view",
+        "cardCancel": "Free cancellation",
+        "cancelSub": "Cancel for free until 24 hours before check-in!",
+        "review": "Great",
+        "rating": "4.2",
+        "cardPrice": "189",
+        "tax": "Include taxes and fees"
+      },
+    
+    {
+        "img": "https://i.ibb.co/zbhLPkd/luxury-bedroom-suite-resort-high-rise-hotel-with-working-table.jpg",
+        "cardTitle": "Mountain Retreat Lodge",
+        "cardDistance": "2km from center",
+        "cardService": "Free Wi-Fi",
+        "cardSubTitle": "Chalet with Fireplace",
+        "cardDesc": "2 Bedrooms • 2 bathrooms • 80m²",
+        "cardCancel": "Non-refundable",
+        "cancelSub": "This booking cannot be canceled or modified.",
+        "review": "Good",
+        "rating": "3.8",
+        "cardPrice": "99",
+        "tax": "Include taxes and fees"
+      },
+    
+    {
+        "img": "https://i.ibb.co/PgRrxBx/about-3.jpg",
+        "cardTitle": "City Center Luxury Hotel",
+        "cardDistance": "100m from center",
+        "cardService": "Swimming pool",
+        "cardSubTitle": "Executive Suite",
+        "cardDesc": "1 Bedroom • 1 bathroom • 50m²",
+        "cardCancel": "Free cancellation",
+        "cancelSub": "Cancel for free until 48 hours before check-in!",
+        "review": "Excellent",
+        "rating": "4.7",
+        "cardPrice": "215",
+        "tax": "Include taxes and fees"
+      },
+    {
+        "img": "https://i.ibb.co/qBZ6h1n/hammocks-with-palm-trees.jpg",
+        "cardTitle": "Seaside Villa",
+        "cardDistance": "5km from center",
+        "cardService": "Private beach",
+        "cardSubTitle": "Luxury Villa with Ocean View",
+        "cardDesc": "3 Bedrooms • 3 bathrooms • 200m² • Ocean view",
+        "cardCancel": "Free cancellation",
+        "cancelSub": "Cancel for free until 72 hours before check-in!",
+        "review": "Excellent",
+        "rating": "4.9",
+        "cardPrice": "350",
+        "tax": "Include taxes and fees"
+      },
+    
+    {
+        "img": "https://i.ibb.co/kXYYD5d/spa-salon-with-beach-view.jpg",
+        "cardTitle": "Riverside Cottage",
+        "cardDistance": "3km from center",
+        "cardService": "Free parking",
+        "cardSubTitle": "Cozy Cottage by the River",
+        "cardDesc": "1 Bedroom • 1 bathroom • 60m²",
+        "cardCancel": "Free cancellation",
+        "cancelSub": "Cancel for free until 24 hours before check-in!",
+        "review": "Great",
+        "rating": "4.3",
+        "cardPrice": "129",
+        "tax": "Include taxes and fees"
+      }
+    
+    ]

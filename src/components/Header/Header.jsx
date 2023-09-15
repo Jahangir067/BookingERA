@@ -39,7 +39,7 @@ const Header = () => {
                     </h1>
                 </div>
 
-                <div data-aos='fade-up' className="cardDiv grid">
+                <div  data-aos='fade-up' className="cardDiv grid">
 
                     <div className="destinationInput">
                         <label htmlFor="city">Search Your Destination</label>
