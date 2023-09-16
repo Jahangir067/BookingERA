@@ -133,7 +133,7 @@
 
 .filterButton:hover{
     background: var(--SecondaryColor);
-    color: black;
+    color: white;
     cursor: pointer;
 }
 

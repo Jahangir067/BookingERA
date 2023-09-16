@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import './HotelDetails.css';
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleArrowLeft, faCircleArrowRight, faCircleXmark, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
@@ -10,6 +10,8 @@ const HotelDetails = () => {
     const id = useLoaderData();
     const [slideNumber, setSlideNumber] = useState(0);
     const [open, setOpen] = useState(false);
+
+    
 
     useEffect(() => {
         fetch(`http://localhost:5000/singlehotel/${id}`)
@@ -58,7 +60,7 @@ const HotelDetails = () => {
                 </div>}
                 <div className="hotelWrapper">
                     <button className='bookNow'>Reserve or Book Now!</button>
-                    <h3 className="text-2xl font-bold">{hotel?.cardTitle}</h3>
+                    <h3 className="cardTitle font-bold">{hotel?.cardTitle}</h3>
                     <div className="hotelAddres">
                         <FontAwesomeIcon icon={faLocationDot} />
                         <span>Elton St 125 {hotel?.location}</span>
@@ -76,17 +78,17 @@ const HotelDetails = () => {
                     </div>
                     <div className="hotelDetails">
                         <div className="hotelDetailTexts">
-                            <h3 className="hotelTitle text-2xl font-bold">Stay in the heart of <span>{hotel?.location}</span></h3>
+                            <h3 className="cardTitle text-2xl font-bold">Stay in the heart of <span>{hotel?.location}</span></h3>
                             <p className="text-[16px] mt-4">Located in {hotel?.location}, a few steps from {hotel?.location} Sea Beach, {hotel?.cardTitle}. Has accommodations with an outdoor swimming pool, free private parking, a garden and a shared lounge. This 5-star hotel offers a private beach area and room service. The property provides a 24-hour front desk, airport transportation, a kids club and free WiFi throughout the property. The nearest airport is {hotel?.location}, {hotel?.cardDistance} of {hotel?.cardTitle}..</p>
                         </div>
                         <div className="hotelDetailPrice">
-                            <h4 className='text-[16px] font-bold text-[#555]'>Perfect view with {hotel?.cardTitle}</h4>
+                            <h5 className='font-bold text-[#555]'>Perfect view with {hotel?.cardTitle}</h5>
                             <span>This property has taken 17 steps to make your stay more sustainable.
                             </span>
-                            <h5>
+                            <h6>
                                 <b>${hotel?.cardPrice}</b> (per nights)
-                            </h5>
-                            <button className='bookBtn'>Reserve or Book Now</button>
+                            </h6>
+                            <Link to={`/reserve/${id}/${hotel?.cardTitle}/${hotel?.cardPrice}`}><button className='bookBtn'>Reserve or Book Now</button></Link>
                         </div>
                     </div>
 
