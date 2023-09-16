@@ -59,7 +59,7 @@ const HotelDetails = () => {
                     <FontAwesomeIcon icon={faCircleArrowRight} className='arrow' onClick={() => handleMove('R')} />
                 </div>}
                 <div className="hotelWrapper">
-                    <button className='bookNow'>Reserve or Book Now!</button>
+                    <Link to={`/reserve/${id}/${hotel?.cardTitle}/${hotel?.cardPrice}`}><button className='bookNow'>Reserve or Book Now!</button></Link>
                     <h3 className="cardTitle font-bold">{hotel?.cardTitle}</h3>
                     <div className="hotelAddres">
                         <FontAwesomeIcon icon={faLocationDot} />

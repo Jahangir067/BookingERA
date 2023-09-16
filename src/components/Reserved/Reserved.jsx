@@ -6,16 +6,14 @@ import { useForm } from "react-hook-form"
 
 
 const Reserved = () => {
-    const { register, handleSubmit } = useForm()
-    const onSubmit = (data) => console.log(data)
+    const { register, handleSubmit } = useForm();
     const { cardTitle, cardPrice } = useParams();
 
-    // const onSubmit = (event) => {
-    //     event.preventDefault();
-    //     const name = event.target.name.value;
-    //     console.log(name)
-    // }
-   
+    const onSubmit = (data) => {
+        console.log(data)
+    }
+
+ 
 
     return (
         <div className="container-lg fromContainer mb-8">
@@ -55,22 +53,22 @@ const Reserved = () => {
 
                         <div className="mb-3">
                             <label htmlFor="studentName" className="form-label fs-6">Full Name</label>
-                            <input className="form-control" id="studentName" type="text" name='name' {...register("name", { required: true })} />
+                            <input className="form-control" id="studentName" type="text" name='name' {...register("name", { required: true })} required/>
                         </div>
 
                         <div className="mb-3">
                             <label htmlFor="email" className="form-label fs-6">Email</label>
-                            <input className="form-control" id="email" type="email" name='email' {...register("email", { required: true })}  />
+                            <input className="form-control" id="email" type="email" name='email' {...register("email", { required: true })} required />
                         </div>
 
                         <div className="mb-3">
                             <label htmlFor="number" className="form-label fs-6">Contact Number</label>
-                            <input className="form-control" id="number" {...register("number", { required: true })} type="number" />
+                            <input className="form-control" id="number" {...register("number", { required: true })} type="number" required/>
                         </div>
 
                         <div className="mb-3">
                             <label htmlFor="guest" className="form-label fs-6">Guest</label>
-                            <select className="form-select" {...register("guest", { required: true })} defaultValue="">
+                            <select className="form-select" {...register("guest", { required: true })} defaultValue="" required>
                                 <option value="">--Select--</option>
                                 <option value='1'>1</option>
                                 <option value='2'>2</option>
@@ -83,12 +81,12 @@ const Reserved = () => {
 
                         <div className="mb-3">
                             <label htmlFor="address" className="form-label fs-6">Address</label>
-                            <input className="form-control" id="address" {...register("address", { required: true })} type="text" />
+                            <input className="form-control" id="address" {...register("address", { required: true })} type="text" required/>
                         </div>
 
                         <div className="mb-3">
                             <label htmlFor="room" className="form-label fs-6">Room</label>
-                            <select className="form-select" {...register("room", { required: true })} defaultValue="">
+                            <select className="form-select" {...register("room", { required: true })} defaultValue="" required>
                                 <option value=''>--Select--</option>
                                 <option value='1'>1</option>
                                 <option value='2'>2</option>
@@ -112,7 +110,11 @@ const Reserved = () => {
                     </div>
                 </form>
 
-
+                <dialog id="my_modal_3" className="modal">
+                    <form method="dialog" className="modal-box">
+                       h1
+                    </form>
+                </dialog>
             </div>
         </div>
 
