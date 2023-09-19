@@ -21,32 +21,28 @@ const Navbar = () => {
           <header className="header flex">
 
             <div className="logoDiv">
-                <a href="#" className='logo flex text-decoration-none'>
-                    <h1><MdTravelExplore className='icon'></MdTravelExplore>  TravelERA</h1>
-                </a>
+                <Link to='/' href="#" className='logo flex text-decoration-none'>
+                    <h1 className='text-secondary'><MdTravelExplore className='icon'></MdTravelExplore>  TravelERA</h1>
+                </Link>
             </div>
 
             <div className={active}>
               <ul className="navLists flex">
 
                 <li className="navItem">
-                    <Link to='/' href="#" className="navLink text-decoration-none">Home</Link>
+                    <Link to='/' href="#" className="navLink text-decoration-none fs-6">Home</Link>
                 </li>
 
                 <li className="navItem">
-                    <Link to='/guide' href="#" className="navLink text-decoration-none">Travel Guide</Link>
-                </li>
-
-                <li className="navItem">
-                    <a href="#" className="navLink text-decoration-none">Packages</a>
+                    <Link to='/guide' href="#" className="navLink text-decoration-none fs-6">Travel Guide</Link>
                 </li>
                 
                 <li className="navItem">
-                    <Link to='/about' href="#" className="navLink text-decoration-none">About</Link>
+                    <Link to='/about' href="#" className="navLink text-decoration-none fs-6">About</Link>
                 </li>
 
                 <li className="navItem">
-                    <Link to='/contact' href="#" className="navLink text-decoration-none">Contact</Link>
+                    <Link to='/contact' href="#" className="navLink text-decoration-none fs-6">Contact</Link>
                 </li>
 
                 <button className='allBtn'>

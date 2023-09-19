@@ -5,17 +5,24 @@ import './Testimonial.css'
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { useEffect } from 'react';
 
 const Testimonial = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, [])
     return (
         <div className='container py-4'>
             <div className="text-center">
-                    <h6 className="section-title text-center text-primary px-3">Testimonial</h6>
-                    <h1 className="mb-5">Our Clients Say!!!</h1>
+                    <h6 data-aos='fade-up' className="section-title text-center text-primary px-3">Testimonial</h6>
+                    <h1 data-aos='fade-up' className="mb-5">Our Clients Say!!!</h1>
                 </div>
             <Swiper
                 effect={'coverflow'}
@@ -32,6 +39,7 @@ const Testimonial = () => {
                 pagination={true}
                 modules={[EffectCoverflow, Pagination]}
                 className="mySwiper pb-5"
+                data-aos='fade-up'
             >
 
 

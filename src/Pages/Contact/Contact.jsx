@@ -15,7 +15,7 @@ const Contact = () => {
                         <div className="row gy-4">
                             <div className="col-md-4">
                                 <h6 className="section-title text-start text-primary text-uppercase">Office</h6>
-                                <p><AiOutlineHome className='text-primary fs-4 me-2'></AiOutlineHome> 123 Street, Mirpur, Dhaka</p>
+                                <p><AiOutlineHome className='text-primary fs-4 me-2'></AiOutlineHome> 123 Street, Tongi, Dhaka</p>
                             </div>
                             <div className="col-md-4">
                                 <h6 className="section-title text-start text-primary text-uppercase">Phone</h6>
@@ -29,7 +29,7 @@ const Contact = () => {
                     </div>
                     <div className="col-md-6 wow fadeIn" data-wow-delay="0.1s">
                         <iframe
-                            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Mirpur-1, Dhaka&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Tongi, Dhaka&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                             frameBorder="0"
                             style={{ border: '0', width: '100%', height: '370px' }}
                             allowFullScreen

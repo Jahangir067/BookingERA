@@ -20,7 +20,7 @@ const AllHotel = () => {
     }, [])
 
     return (
-        <section className='main container section pt-0'>
+        <section className='main container section pt-5'>
             <div className="secTitle">
                 <h3 data-aos='fade-up'  className="title text-info">RECOMMENDED HOTEL FOR YOU</h3>
             </div>
