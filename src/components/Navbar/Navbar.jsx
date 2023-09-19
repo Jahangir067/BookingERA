@@ -42,15 +42,15 @@ const Navbar = () => {
                 </li>
                 
                 <li className="navItem">
-                    <a href="#" className="navLink text-decoration-none">About</a>
+                    <Link to='/about' href="#" className="navLink text-decoration-none">About</Link>
                 </li>
 
                 <li className="navItem">
-                    <a href="#" className="navLink text-decoration-none">Contact</a>
+                    <Link to='/contact' href="#" className="navLink text-decoration-none">Contact</Link>
                 </li>
 
                 <button className='allBtn'>
-                    <a href="#" className='text-decoration-none'>Book Now</a>
+                    <Link href="#" className='text-decoration-none'>Book Now</Link>
                 </button>
 
               </ul>

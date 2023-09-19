@@ -5,6 +5,7 @@ import Recommended from '../../components/Recommended/Recommended'
 import Video from '../../components/Video/Video'
 import Header from '../../components/Header/Header'
 import './Home.css';
+import Testimonial from '../../components/Testimonial/Testimonial'
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <Popular></Popular>
             <FeaturedCard></FeaturedCard>
             <Video></Video>
+            <Testimonial></Testimonial>
         </div>
     );
 };

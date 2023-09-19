@@ -37,6 +37,7 @@ const Recommended = () => {
                             pagination={{
                                 clickable: true,
                             }}
+                            
                             modules={[Pagination]}
                             className="mySwiper"
                         >

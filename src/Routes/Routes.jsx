@@ -7,6 +7,8 @@ import TravelGuide from '../Pages/TravelGuide/TravelGuide'
 import Hotels from "../components/Hotels/Hotels";
 import HotelDetails from "../components/HotelDetails/HotelDetails";
 import Reserved from "../components/Reserved/Reserved";
+import Contact from "../Pages/Contact/Contact";
+import About from "../Pages/About/About";
 
  export const router = createBrowserRouter([
     {
@@ -33,6 +35,14 @@ import Reserved from "../components/Reserved/Reserved";
         {
           path: '/reserve/:id/:cardTitle/:cardPrice',
           element: <Reserved></Reserved>,
+        },
+        {
+          path: '/contact',
+          element: <Contact></Contact>
+        },
+        {
+          path: '/about',
+          element: <About></About>
         }
       ]
     },

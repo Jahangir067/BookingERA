@@ -3,17 +3,55 @@ import { useParams } from 'react-router-dom';
 import './Reserved.css';
 import { MdTravelExplore, MdAttachEmail } from 'react-icons/md';
 import { useForm } from "react-hook-form"
+import Swal from 'sweetalert2';
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 
 const Reserved = () => {
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const { cardTitle, cardPrice } = useParams();
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+  
+    
 
     const onSubmit = (data) => {
         console.log(data)
+        const { name, email, number, address, guest, room } = data;
+        const newBooking = { name, email, number, address, guest, room }
+        console.log(newBooking)
+        fetch(`http://localhost:5000/booking`, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newBooking)
+        })
+
+            .then(res => res.json())
+            .then(result => {
+                if (result.insertedId) {
+                    reset();
+                    setShow(true);
+                }
+                else{
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Please fill in all the required fields!',
+                      });
+                }
+
+                
+            })
     }
 
- 
+
+
+
 
     return (
         <div className="container-lg fromContainer mb-8">
@@ -53,7 +91,7 @@ const Reserved = () => {
 
                         <div className="mb-3">
                             <label htmlFor="studentName" className="form-label fs-6">Full Name</label>
-                            <input className="form-control" id="studentName" type="text" name='name' {...register("name", { required: true })} required/>
+                            <input className="form-control" id="studentName" type="text" name='name' {...register("name", { required: true })} required />
                         </div>
 
                         <div className="mb-3">
@@ -63,7 +101,7 @@ const Reserved = () => {
 
                         <div className="mb-3">
                             <label htmlFor="number" className="form-label fs-6">Contact Number</label>
-                            <input className="form-control" id="number" {...register("number", { required: true })} type="number" required/>
+                            <input className="form-control" id="number" {...register("number", { required: true })} type="number" required />
                         </div>
 
                         <div className="mb-3">
@@ -81,7 +119,7 @@ const Reserved = () => {
 
                         <div className="mb-3">
                             <label htmlFor="address" className="form-label fs-6">Address</label>
-                            <input className="form-control" id="address" {...register("address", { required: true })} type="text" required/>
+                            <input className="form-control" id="address" {...register("address", { required: true })} type="text" required />
                         </div>
 
                         <div className="mb-3">
@@ -96,25 +134,35 @@ const Reserved = () => {
 
                     </div>
 
-                    <div className="d-flex justify-content-between bg-light p-2 imgBtn">
+                    <div className="bg-light p-2 imgBtn">
                         <div className="d-flex gap-2 mx-2">
                             <img className="formImg" src="https://i.ibb.co/8cS08gX/images-1-removebg-preview-1.png" alt="" />
                             <img className="formImg" src="https://i.ibb.co/Z8XpVXg/visa-349221.png" alt="" />
                             <img className="formImg" src="https://i.ibb.co/0n0515F/maestro-217445.png" alt="" />
                             <img className="formImg" src="https://i.ibb.co/3vybWr4/ruble-10040420.png" alt="" />
-                            <img className="formImg" src="https://i.ibb.co/7GX248v/download-7.png" alt="" />
                         </div>
-                        <div className="h w-100 payBtn">
-                            <button className="filterButton btnWidth">Checkout</button>
+                        <div className="w-100 payBtn">
+                            <button onClick={() => setShow()} className="filterButton btnWidth">Checkout ${cardPrice}</button>
                         </div>
                     </div>
                 </form>
 
-                <dialog id="my_modal_3" className="modal">
-                    <form method="dialog" className="modal-box">
-                       h1
-                    </form>
-                </dialog>
+                {/* MOdal */}
+
+                <Modal show={show} onHide={handleClose}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Confirm Your Payment</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>Stripe Payment Method will be add here</Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="secondary" onClick={handleClose}>
+                            Close
+                        </Button>
+                        <Button variant="primary" onClick={handleClose}>
+                            Save Changes
+                        </Button>
+                    </Modal.Footer>
+                </Modal>
             </div>
         </div>
 
