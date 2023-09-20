@@ -4,7 +4,7 @@ const useHotel = () => {
     const [hotel, setHotel] = useState([]);
     const [loading, setLoading] = useState(true)
     useEffect(() => {
-        fetch('http://localhost:5000/hotelsInfo')
+        fetch('https://travel-era-server.vercel.app/hotelsInfo')
             .then(res => res.json())
             .then(data => {
                 setHotel(data)

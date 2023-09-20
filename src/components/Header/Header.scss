@@ -160,6 +160,8 @@
 
                 &:hover{
                     color: var(--PrimaryColor);
+                    scale: 1.5;
+                    transition: 1.5s;
                 }
             }
         }

@@ -13,7 +13,7 @@ const FeaturedCard = () => {
     const displayData = data.slice(0, 6);
 
     useEffect(() => {
-        fetch('http://localhost:5000/hotels')
+        fetch('https://travel-era-server.vercel.app/hotels')
             .then(res => res.json())
             .then(data => setData(data))
     }, []);

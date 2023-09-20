@@ -14,7 +14,7 @@ const HotelDetails = () => {
     
 
     useEffect(() => {
-        fetch(`http://localhost:5000/singlehotel/${id}`)
+        fetch(`https://travel-era-server.vercel.app/singlehotel/${id}`)
             .then(res => res.json())
             .then(data => {
                 setHotel(data)
@@ -24,7 +24,7 @@ const HotelDetails = () => {
     }, [id])
 
     useEffect( () => {
-        fetch('http://localhost:5000/photos')
+        fetch('https://travel-era-server.vercel.app/photos')
         .then(res => res.json())
         .then(data => setPhotos(data))
     }, [])
