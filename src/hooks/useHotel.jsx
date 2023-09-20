@@ -7,6 +7,7 @@ const useHotel = () => {
         fetch('https://travel-era-server.vercel.app/hotelsInfo')
             .then(res => res.json())
             .then(data => {
+                console.log(data)
                 setHotel(data)
                 setLoading(false)
             });
