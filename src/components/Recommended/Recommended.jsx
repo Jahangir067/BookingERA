@@ -10,8 +10,8 @@ import { GrLocation } from 'react-icons/gr';
 import { BsClipboardCheck } from 'react-icons/bs';
 import './recommended.scss';
 
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+// import Aos from 'aos';
+// import 'aos/dist/aos.css';
 
 const Recommended = () => {
     const [data, setData] = useState([]);
@@ -22,9 +22,9 @@ const Recommended = () => {
             .then(data => setData(data))
     }, []);
 
-    useEffect(() => {
-        Aos.init({ duration: 2000 })
-    }, [])
+    // useEffect(() => {
+    //     Aos.init({ duration: 2000 })
+    // }, [])
 
     return (
         <div className='container-xxl py-5'>

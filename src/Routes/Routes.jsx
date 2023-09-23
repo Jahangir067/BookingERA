@@ -9,11 +9,13 @@ import HotelDetails from "../components/HotelDetails/HotelDetails";
 import Reserved from "../components/Reserved/Reserved";
 import Contact from "../Pages/Contact/Contact";
 import About from "../Pages/About/About";
+import NotFound from "../components/NotFound/NotFound";
 
  export const router = createBrowserRouter([
     {
       path: "/",
       element: <Main></Main>,
+      errorElement: <NotFound></NotFound>,
       children: [
         {
           path: '/',

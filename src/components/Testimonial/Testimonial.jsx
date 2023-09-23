@@ -5,8 +5,8 @@ import './Testimonial.css'
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+// import Aos from 'aos';
+// import 'aos/dist/aos.css';
 
 
 // import required modules
@@ -15,9 +15,9 @@ import { useEffect } from 'react';
 
 const Testimonial = () => {
 
-    useEffect(() => {
-        Aos.init({ duration: 2000 })
-    }, [])
+    // useEffect(() => {
+    //     Aos.init({ duration: 2000 })
+    // }, [])
     return (
         <div className='container py-4'>
             <div className="text-center">

@@ -3,8 +3,8 @@ import './FeaturedCard.scss'
 import { GrLocation } from 'react-icons/gr';
 import { BsClipboardCheck } from 'react-icons/bs';
 
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+// import Aos from 'aos';
+// import 'aos/dist/aos.css';
 
 const FeaturedCard = () => {
 
@@ -18,9 +18,9 @@ const FeaturedCard = () => {
             .then(data => setData(data))
     }, []);
 
-    useEffect( () => {
-        Aos.init({duration: 2000})
-    }, [])
+    // useEffect( () => {
+    //     Aos.init({duration: 2000})
+    // }, [])
 
     return (
         <section className='main container section'>

@@ -3,15 +3,15 @@ import { FaHotel, FaHouseUser } from 'react-icons/fa';
 import {   RiHotelBedFill } from 'react-icons/ri';
 
 
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+// import Aos from 'aos';
+// import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 const About = () => {
 
-    useEffect(() => {
-        Aos.init({ duration: 2000 })
-    }, [])
+    // useEffect(() => {
+    //     Aos.init({ duration: 2000 })
+    // }, [])
 
     return (
         <div className="container-xxl pt-5">
