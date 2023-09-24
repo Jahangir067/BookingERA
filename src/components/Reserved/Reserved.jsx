@@ -23,7 +23,7 @@ const Reserved = () => {
         const { name, email, number, address, guest, room } = data;
         const newBooking = { name, email, number, address, guest, room }
         console.log(newBooking)
-        fetch(`https://booking-era-server.vercel.app/booking`, {
+        fetch(`https://bookingera-server.up.railway.app/booking`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

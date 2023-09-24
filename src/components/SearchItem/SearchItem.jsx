@@ -9,7 +9,7 @@ const SearchItem = () => {
     const [hotels, setHotels] = useState();
     useEffect(() => {
         setLoader(true);
-        fetch('https://booking-era-server.vercel.app/hotelsInfo')
+        fetch('https://bookingera-server.up.railway.app/hotelsInfo')
             .then(res => res.json())
             .then(data => {
                 setHotels(data)
