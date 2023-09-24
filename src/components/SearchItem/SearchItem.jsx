@@ -6,7 +6,7 @@ const SearchItem = () => {
 
     const [hotels, setHotels] = useState();
     useEffect( () => {
-        fetch('https://travel-era-server.vercel.app/hotelsInfo')
+        fetch('https://booking-era-server.vercel.app/hotelsInfo')
         .then(res => res.json())
         .then(data => setHotels(data))
     } , [])
